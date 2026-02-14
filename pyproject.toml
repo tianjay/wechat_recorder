@@ -1,0 +1,52 @@
+[project]
+name = "wechat-recorder"
+version = "0.1.0"
+description = "微信聊天记录读取器 - 通过图像识别提取聊天记录"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Developer", email = "dev@example.com"}
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependencies]
+pyautogui = "==0.9.54"
+opencv-python = "==4.9.0.80"
+pillow = "==10.1.0"
+pytesseract = "==0.3.10"
+numpy = "==1.26.2"
+pandas = "==2.1.4"
+pywin32 = "==306"
+keyboard = "==0.13.5"
+python-dotenv = "==1.0.0"
+loguru = "==0.7.2"
+
+[tool.uv.dependency-groups]
+dev.dependencies = [
+    "pytest==7.0.0",
+    "black==23.0.0", 
+    "isort==5.12.0",
+    "mypy==1.0.0",
+]
+
+
+
+
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.mypy]
+python_version = "3.9"
+show_error_codes = true
+strict = true
