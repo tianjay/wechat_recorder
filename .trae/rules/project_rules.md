@@ -13,17 +13,19 @@
 
 ## 依赖管理
 - 主要依赖: 
-  - pyautogui: 自动化控制
-  - opencv-python: 图像处理
-  - pytesseract: OCR识别
-  - pillow: 图像处理
-  - numpy: 数值计算
+  - uiautomation: Windows UI自动化核心库（获取元素树）
+  - pyautogui: 模拟鼠标键盘输入（备用方案）
+  - pywin32: Windows API调用
+  - pyperclip: 剪贴板操作
+  - pandas: 数据清洗与存储
 
 ## 项目结构
 ```
 wechat_recorder/
 ├── src/
 │   ├── core/           # 核心功能模块
+│   │   ├── automation.py # UI自动化控制
+│   │   └── parser.py     # 文本解析
 │   ├── utils/          # 工具函数
 │   └── main.py         # 主程序
 ├── tests/              # 测试代码

@@ -1,23 +1,19 @@
 # 微信聊天记录读取器依赖
 
 # 核心自动化库
-pyautogui==0.9.54
 uiautomation==2.0.19
+pyautogui==0.9.54
 
-# 图像处理
-opencv-python==4.9.0.80
-pillow==10.1.0
-
-# OCR识别
-pytesseract==0.3.10
+# 剪贴板与输入处理
+pyperclip==1.8.2
+keyboard==0.13.5
 
 # 数据处理
-numpy==1.26.2
 pandas==2.1.4
+openpyxl==3.1.2  # Excel支持
 
 # 工具库
 pywin32==306
-keyboard==0.13.5
 
 # 配置管理
 python-dotenv==1.0.0

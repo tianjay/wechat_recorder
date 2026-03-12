@@ -1,0 +1,3 @@
+[WindowControl] Name='微信' ClassName='Qt51514QWindowIcon' Rect=(68,52,1389,1214)[1321x1162]
+  [PaneControl] Name='Weixin' ClassName='Qt51514QWindowIcon' Rect=(1380,1205,1381,1206)[1x1]
+  [PaneControl] Name='MMUIRenderSubWindowHW' ClassName='MMUIRenderSubWindowHW' Rect=(76,52,1381,1206)[1305x1154]
